@@ -13,8 +13,7 @@ public class GradeModuleNormalTest {
 		final Float grade3 = 6.0f;
 		final Integer attendanceFrequency = 80;
 
-		final ApprovalStatus status = GradeModule.performPartialConsolidation(grade1, grade2, grade3,
-				attendanceFrequency);
+		final ApprovalStatus status = GradeModule.performPartialConsolidation(grade1, grade2, grade3, attendanceFrequency);
 
 		assertEquals(ApprovalStatus.APRN, status);
 	}
